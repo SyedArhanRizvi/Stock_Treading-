@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #f4f4f4;
+}
+
+header {
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffffff33;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #00e6e6;
+}
+
+header .stock-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #00e6e6;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #00b3b3;
+}
+
+.stock-details {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.chart-section,
+.comparison-section {
+    margin-top: 2rem;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #00e6e6;
+    color: #000;
+}
+
+button#clear-table {
+    background: #ff6666;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+button#clear-table:hover {
+    background: #e63939;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+
+    canvas {
+        height: 300px !important;
+    }
+}

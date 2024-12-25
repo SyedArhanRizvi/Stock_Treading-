@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Stock Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>📈 Enhanced Stock Tracker</h1>
+            <div class="stock-selector">
+                <label for="stock-dropdown">Choose Trending Stock:</label>
+                <select id="stock-dropdown">
+                    <!-- Trending stocks will be loaded dynamically -->
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <div class="search-bar">
+                <input type="text" id="stock-symbol" placeholder="Search for a Stock (e.g., TSLA)">
+                <button id="search-stock">Track Stock</button>
+            </div>
+        </section>
+
+        <section id="stock-info" class="stock-details">
+            <!-- Stock data will be dynamically added here -->
+        </section>
+
+        <section class="chart-section">
+            <h2>Stock Performance Graph</h2>
+            <div class="chart-container">
+                <canvas id="stock-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <h2>Stock Comparison Table</h2>
+            <button id="clear-table">Clear Comparison</button>
+            <table id="stock-table">
+                <thead>
+                    <tr>
+                        <th>Stock Symbol</th>
+                        <th>Price ($)</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Comparison data will be added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
